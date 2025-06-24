@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="831.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="142.0" layoutY="29.0" prefHeight="85.0" prefWidth="530.0" text="Welcome to Mushroom's Origin Creator" textAlignment="CENTER">
+         <font>
+            <Font name="Yu Gothic Bold" size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03313840180635452" green="0.8947368264198303" blue="0.8085770010948181" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5467348694801331" green="0.4181286692619324" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="314.0" layoutY="385.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="187.0" text="Get Started!" textFill="#0faac6">
+         <font>
+            <Font name="Sitka Text" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

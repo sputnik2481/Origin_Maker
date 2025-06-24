@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="881.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shroomathy.originmaker.welcomeController">
+   <children>
+      <AnchorPane prefHeight="922.0" prefWidth="920.0" style="-fx-background-color: #d4c7e4;">
+         <children>
+            <Label alignment="CENTER" layoutX="91.0" layoutY="838.0" prefHeight="43.0" prefWidth="535.0" text="Mushrooms Origins Creator">
+               <font>
+                  <Font name="Minecraft Ten" size="16.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13742689788341522" green="0.6315789222717285" blue="0.5656920075416565" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5320338010787964" green="0.056042883545160294" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="24.0" prefHeight="43.0" prefWidth="535.0" text="Practice Time">
+               <font>
+                  <Font name="Minecraft Ten" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13742689788341522" green="0.6315789222717285" blue="0.5656920075416565" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5320338010787964" green="0.056042883545160294" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="86.0" prefHeight="43.0" prefWidth="535.0" text="Please type the following code" textFill="#6e248a">
+               <font>
+                  <Font name="Minecraft Ten" size="24.0" />
+               </font>
+            </Label>
+            <TextField id="userInput" fx:id="userInput" layoutX="205.0" layoutY="441.0" onAction="#switchToScene2" prefHeight="55.0" prefWidth="270.0" />
+            <Label fx:id="codeToType1" layoutX="42.0" layoutY="135.0" prefHeight="43.0" prefWidth="357.0" text="${controller.codeToType1}" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.19736842811107635" green="0.024671053513884544" blue="0.18297697603702545" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.01315789483487606" green="0.0021320662926882505" blue="0.012239075265824795" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" layoutX="393.0" layoutY="135.0" prefHeight="43.0" prefWidth="136.0" text="Correct!" textFill="#20b939">
+               <font>
+                  <Font name="Minecraft Ten" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="codeToType2" layoutX="42.0" layoutY="187.0" prefHeight="43.0" prefWidth="357.0" text="${controller.codeToType2}" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.19736842811107635" green="0.024671053513884544" blue="0.18297697603702545" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.01315789483487606" green="0.0021320662926882505" blue="0.012239075265824795" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button alignment="CENTER" layoutX="532.0" layoutY="233.0" mnemonicParsing="false" onAction="#fourLineCodeCheckL3" prefHeight="26.0" prefWidth="85.0" style="-fx-background-color: #d8d3da; -fx-border-color: #45d3b0; -fx-border-width: 2;" text="check" textFill="#12a188">
+               <font>
+                  <Font name="Minecraft Ten" size="18.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Label fx:id="codeToType3" layoutX="42.0" layoutY="231.0" prefHeight="43.0" prefWidth="357.0" text="${controller.codeToType3}" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.19736842811107635" green="0.024671053513884544" blue="0.18297697603702545" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.01315789483487606" green="0.0021320662926882505" blue="0.012239075265824795" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" layoutX="393.0" layoutY="231.0" prefHeight="43.0" prefWidth="136.0" text="wrong" textFill="#d72518">
+               <font>
+                  <Font name="Minecraft Ten" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="codeToType4" layoutX="42.0" layoutY="274.0" prefHeight="43.0" prefWidth="357.0" text="${controller.codeToType4}" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.19736842811107635" green="0.024671053513884544" blue="0.18297697603702545" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.01315789483487606" green="0.0021320662926882505" blue="0.012239075265824795" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" layoutX="393.0" layoutY="274.0" prefHeight="43.0" prefWidth="136.0" text="incomplete" textFill="#7ec4a6">
+               <font>
+                  <Font name="Minecraft Ten" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="oldCode" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="358.0" prefHeight="43.0" prefWidth="384.0" text="${controller.oldCode}" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.20532570779323578" green="0.020800000056624413" blue="0.25999999046325684" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03198099508881569" green="0.22744883596897125" blue="0.2763157784938812" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" layoutX="393.0" layoutY="178.0" prefHeight="43.0" prefWidth="136.0" text="Correct!" textFill="#20b939">
+               <font>
+                  <Font name="Minecraft Ten" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

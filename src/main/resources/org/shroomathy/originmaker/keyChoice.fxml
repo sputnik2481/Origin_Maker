@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="881.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shroomathy.originmaker.welcomeController">
+   <children>
+      <AnchorPane prefHeight="922.0" prefWidth="920.0" style="-fx-background-color: #d4c7e4;">
+         <children>
+            <Label alignment="CENTER" layoutX="91.0" layoutY="838.0" prefHeight="43.0" prefWidth="535.0" text="Mushrooms Origins Creator">
+               <font>
+                  <Font name="Minecraft Ten" size="16.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13742689788341522" green="0.6315789222717285" blue="0.5656920075416565" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5320338010787964" green="0.056042883545160294" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="24.0" prefHeight="43.0" prefWidth="535.0" text="action on key">
+               <font>
+                  <Font name="Minecraft Ten" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13742689788341522" green="0.6315789222717285" blue="0.5656920075416565" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5320338010787964" green="0.056042883545160294" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" layoutX="73.0" layoutY="76.0" prefHeight="43.0" prefWidth="535.0" text="which key would you like to use?" textFill="#6e248a">
+               <font>
+                  <Font name="Minecraft Ten" size="24.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="217.0" layoutY="168.0" mnemonicParsing="false" onAction="#primaryKey" prefHeight="43.0" prefWidth="245.0" style="-fx-background-color: #d8d3da; -fx-border-color: #45d3b0; -fx-border-width: 2;" text="primary" textFill="#12a188">
+               <font>
+                  <Font name="Minecraft Ten" size="18.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button alignment="CENTER" layoutX="218.0" layoutY="259.0" mnemonicParsing="false" onAction="#secondaryKey" prefHeight="43.0" prefWidth="245.0" style="-fx-background-color: #d8d3da; -fx-border-color: #45d3b0; -fx-border-width: 2;" text="secondary" textFill="#12a188">
+               <font>
+                  <Font name="Minecraft Ten" size="18.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
